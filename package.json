@@ -1,0 +1,45 @@
+{
+  "name": "seafoodbackend",
+  "version": "1.0.0",
+  "description": "fresh sea food",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.3.0",
+    "npm": ">=5.3.0",
+    "yarn": ">=0.27.5"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/dangbt/seafood-backend.git",
+  "author": "dangbt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dangbt/seafood-backend/issues"
+  },
+  "homepage": "https://github.com/dangbt/seafood-backend#readme",
+  "dependencies": {
+    "boom": "^7.2.0",
+    "bunyan": "^1.8.12",
+    "eko-joi-objectid": "^1.0.2",
+    "glob": "^7.1.2",
+    "good": "^8.1.1",
+    "good-console": "^7.1.0",
+    "hapi": "^17.5.2",
+    "hapi-auth-jwt": "^4.0.0",
+    "hapi-cors-headers": "^1.0.3",
+    "hapi-swagger": "^9.1.1",
+    "inert": "^5.1.0",
+    "joi": "^13.4.0",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.10",
+    "mongoose": "^5.2.4",
+    "mongoose-unique-validator": "^2.0.1",
+    "path": "^0.12.7",
+    "vision": "^5.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.1.0"
+  }
+}
