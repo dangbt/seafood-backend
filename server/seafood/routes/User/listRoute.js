@@ -25,7 +25,7 @@ const listUserRoute = {
         }
       }
     },
-    handler: (req, h) => {
+    handler: (req, reply) => {
       const filter = req.query;
       const { user } = req.server;
     //   const { role } = req.auth.credentials;
@@ -33,10 +33,10 @@ const listUserRoute = {
         return user
           .list(filter)
           .then((users) => {
-            return h(users).code(200);
+            return reply.response(users).code(200);
           })
           .catch((err) => {
-            return h(Boom.badRequest(err.message));
+            return reply.response(Boom.badRequest(err.message));
           });
     //   }
     //   return reply(Boom.unauthorized());

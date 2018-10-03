@@ -118,7 +118,6 @@ class User {
   async list(filter) {
     const query = { deleted: false };
     const { name } = filter;
-
     if (name && typeof name === 'string') {
       query.fullName = { $regex: name };
     }

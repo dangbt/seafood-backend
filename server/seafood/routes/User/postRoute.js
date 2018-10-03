@@ -25,16 +25,16 @@ const postUserRoute = {
         }
       }
     },
-    handler: (req, h) => {
+    handler: (req, reply) => {
       const userRequest = req.payload;
       const { user } = req.server;
         return user
           .create(userRequest)
           .then((user) => {
-            return h.response(user).code(200);
+            return reply.response(user).code(200);
           })
           .catch((err) => {
-            return h.response({error : err.message}).code(500);
+            return reply.response({error : err.message}).code(500);
           });
     }
   }
